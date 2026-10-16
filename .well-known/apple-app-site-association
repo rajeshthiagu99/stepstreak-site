@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["79T6776H8U.ai.stepstreak.app"],
+        "components": [
+          { "/": "/i/*", "comment": "Friend invite links open the StepStreak Friends tab" }
+        ]
+      }
+    ]
+  }
+}

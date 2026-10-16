@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Support — StepsStreak</title>
+<meta name="description" content="Get help with StepsStreak."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400..800&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #F6F1E7; --bg2: #FBF7EE; --card: #FFFDF8;
+  --ink: #0F0E0C; --ink-muted: #6B6660; --ink-subtle: #9E9891;
+  --line: #E7DFD0; --orange: #E94E1B; --orange-tint: #FBD9C6;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+}
+html { background: var(--bg); color: var(--ink); font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
+nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; max-width: 1100px; margin: 0 auto; }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.nav-logo svg { width: 36px; height: 36px; border-radius: 9px; }
+.nav-logo-text { font-family: var(--font-display); font-size: 18px; font-weight: 700; letter-spacing: -0.025em; }
+.content { max-width: 680px; margin: 0 auto; padding: 60px 24px 100px; }
+h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 12px; }
+.subtitle { font-size: 16px; color: var(--ink-muted); margin-bottom: 56px; }
+.faq { display: flex; flex-direction: column; gap: 0; }
+.faq-item { padding: 24px 0; border-bottom: 1px solid var(--line); }
+.faq-item:first-child { border-top: 1px solid var(--line); }
+.faq-q { font-family: var(--font-display); font-size: 18px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 8px; }
+.faq-a { font-size: 14px; line-height: 1.7; color: var(--ink-muted); }
+.contact-card { margin-top: 56px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 36px; }
+.contact-card h2 { font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+.contact-card p { font-size: 14px; color: var(--ink-muted); margin-bottom: 20px; line-height: 1.6; }
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: var(--bg); font-size: 14px; font-weight: 600; padding: 12px 24px; border-radius: 12px; text-decoration: none; }
+.btn-primary:hover { opacity: 0.85; }
+footer { border-top: 1px solid var(--line); padding: 32px 40px; max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink-muted); font-size: 13px; font-weight: 500; }
+.footer-logo svg { width: 24px; height: 24px; border-radius: 6px; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { font-size: 13px; color: var(--ink-subtle); text-decoration: none; }
+.footer-links a:hover { color: var(--ink); }
+@media (max-width: 600px) { nav { padding: 16px 20px; } footer { flex-direction: column; padding: 24px 20px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <rect width="200" height="200" rx="44" fill="#F6F1E7"/>
+      <defs><linearGradient id="g" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FBA06B"/><stop offset="100%" stop-color="#E94E1B"/></linearGradient></defs>
+      <path d="M62 48 C62 48, 145 42, 145 82 C145 112, 55 108, 55 138 C55 168, 138 172, 138 172" fill="none" stroke="url(#g)" stroke-width="22" stroke-linecap="round"/>
+    </svg>
+    <span class="nav-logo-text">StepsStreak</span>
+  </a>
+</nav>
+
+<div class="content">
+  <h1>Support</h1>
+  <p class="subtitle">Answers to common questions about StepsStreak.</p>
+
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Why isn't my step count updating?</div>
+      <div class="faq-a">StepsStreak reads data from Apple Health. Make sure you've granted Health access by going to Settings → Health → Data Access & Devices → StepsStreak, and enable Steps under Read access. Then reopen the app.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Does the app work on simulator or only real devices?</div>
+      <div class="faq-a">HealthKit requires a real iPhone or iPad to return live step data. The simulator will always show zero steps.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What counts as completing a day?</div>
+      <div class="faq-a">Walking 10,000 or more steps in a single calendar day (midnight to midnight, local time) counts as a completed day and keeps your streak alive.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What happens if I miss a day?</div>
+      <div class="faq-a">Every challenge includes one grace day — miss a single day and your streak survives. Miss a second day and the challenge ends; you can start a fresh 21-day challenge from the app at any time.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Does the app run in the background?</div>
+      <div class="faq-a">Background step delivery is not enabled in v1. Open the app to get your latest step count. Your steps are always recorded by Apple Health in the background — StepsStreak just reads them when you open the app.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is StepsStreak a subscription?</div>
+      <div class="faq-a">No. StepsStreak Pro is a one-time purchase — you pay once and it's yours. There's no auto-renewal, no recurring charge, and no upsell.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I restore my purchase on a new device?</div>
+      <div class="faq-a">Sign in with the same Apple ID you used originally, then open StepsStreak and tap "Restore purchase" on the paywall, or go to Settings → Restore purchase. Your one-time purchase is tied to your Apple ID.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I get a refund?</div>
+      <div class="faq-a">All StepsStreak refunds go through Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, find the StepsStreak purchase, and request a refund. We don't process refunds directly.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Where is my data stored?</div>
+      <div class="faq-a">Your step data stays inside Apple Health — we only read it and never send it anywhere. Your challenge progress, day history, and walks are stored locally on your device. Your account information (name, email, a user ID, and purchase status) is stored with our authentication provider (Supabase) and purchase provider (RevenueCat). See our <a href="/privacy">Privacy Policy</a> for the full list.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I delete my account and data?</div>
+      <div class="faq-a">Inside the app: Settings → Delete account. This permanently removes your account and all associated data from our backend. Deleting the app from your device additionally removes the local challenge and streak data. To also remove step data from Apple Health, go to Settings → Health → Data Access & Devices → StepsStreak → Delete All Data from "StepsStreak".</div>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <h2>Still need help?</h2>
+    <p>Can't find what you're looking for? Send us an email and we'll get back to you as soon as possible.</p>
+    <a href="mailto:support@stepsstreak.com" class="btn-primary">Email support</a>
+  </div>
+</div>
+
+<footer>
+  <a href="/" class="footer-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <rect width="200" height="200" rx="44" fill="#F6F1E7"/>
+      <defs><linearGradient id="gf" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FBA06B"/><stop offset="100%" stop-color="#E94E1B"/></linearGradient></defs>
+      <path d="M62 48 C62 48, 145 42, 145 82 C145 112, 55 108, 55 138 C55 168, 138 172, 138 172" fill="none" stroke="url(#gf)" stroke-width="22" stroke-linecap="round"/>
+    </svg>
+    StepsStreak © 2025–2026
+  </a>
+  <div class="footer-links">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/support">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>

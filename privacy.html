@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Privacy Policy — StepsStreak</title>
+<meta name="description" content="Privacy Policy for the StepsStreak iOS app."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400..800&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #F6F1E7; --card: #FFFDF8;
+  --ink: #0F0E0C; --ink-muted: #6B6660; --ink-subtle: #9E9891;
+  --line: #E7DFD0; --orange: #E94E1B;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+}
+html { background: var(--bg); color: var(--ink); font-family: var(--font-ui); -webkit-font-smoothing: antialiased; }
+nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; max-width: 1100px; margin: 0 auto; }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.nav-logo svg { width: 36px; height: 36px; border-radius: 9px; }
+.nav-logo-text { font-family: var(--font-display); font-size: 18px; font-weight: 700; letter-spacing: -0.025em; }
+.content { max-width: 680px; margin: 0 auto; padding: 60px 24px 100px; }
+h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 12px; }
+.meta { font-size: 13px; color: var(--ink-subtle); margin-bottom: 56px; }
+h2 { font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); margin: 40px 0 10px; }
+p { font-size: 15px; line-height: 1.75; color: var(--ink-muted); margin-bottom: 16px; }
+ul { padding-left: 20px; margin-bottom: 16px; }
+ul li { font-size: 15px; line-height: 1.75; color: var(--ink-muted); margin-bottom: 6px; }
+a { color: var(--orange); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.highlight-box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 28px; margin: 32px 0; }
+.highlight-box p { margin: 0; font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding: 32px 40px; max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink-muted); font-size: 13px; font-weight: 500; }
+.footer-logo svg { width: 24px; height: 24px; border-radius: 6px; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { font-size: 13px; color: var(--ink-subtle); text-decoration: none; }
+.footer-links a:hover { color: var(--ink); }
+@media (max-width: 600px) { nav { padding: 16px 20px; } footer { flex-direction: column; padding: 24px 20px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <rect width="200" height="200" rx="44" fill="#F6F1E7"/>
+      <defs><linearGradient id="g" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FBA06B"/><stop offset="100%" stop-color="#E94E1B"/></linearGradient></defs>
+      <path d="M62 48 C62 48, 145 42, 145 82 C145 112, 55 108, 55 138 C55 168, 138 172, 138 172" fill="none" stroke="url(#g)" stroke-width="22" stroke-linecap="round"/>
+    </svg>
+    <span class="nav-logo-text">StepsStreak</span>
+  </a>
+</nav>
+
+<div class="content">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: April 16, 2026 &nbsp;·&nbsp; Last updated: April 16, 2026</p>
+
+  <div class="highlight-box">
+    <p><strong>Summary:</strong> StepsStreak reads your step count from Apple Health (never written, never sold). To run the app we also collect your name, email, a user ID, and purchase status — these are stored with our authentication and payment providers. We use privacy-friendly analytics and crash reporting to keep the app working. You can delete your account and all associated data from inside the app at any time.</p>
+  </div>
+
+  <h2>1. About This Policy</h2>
+  <p>This Privacy Policy describes how <strong>StepStreak</strong> — the iOS app published on the App Store, also marketed as "StepsStreak" on our website at stepsstreak.com (together, "the App", "we", "our") — handles information when you use our iOS application. By using the App, you agree to the practices described in this policy.</p>
+
+  <h2>2. Information We Access from Apple Health</h2>
+  <p>StepsStreak requests permission to read one data type from Apple HealthKit:</p>
+  <ul>
+    <li><strong>Step Count</strong> (HKQuantityType .stepCount) — used to display your daily step progress and determine whether you have met the 10,000-step daily goal.</li>
+  </ul>
+  <p>We request this permission explicitly through iOS's standard HealthKit authorization dialog. You may revoke it at any time in Settings → Health → Data Access & Devices → StepsStreak.</p>
+  <p>Health data stays on your device. It is <strong>never</strong> transmitted to our servers or any third party.</p>
+
+  <h2>3. Information We Collect from You</h2>
+  <p>To sign you in, bill you, and keep the app running, we collect:</p>
+  <ul>
+    <li><strong>Name and email address</strong> — from Sign in with Apple or Google. Stored in our backend (Supabase) to identify your account.</li>
+    <li><strong>Anonymous user ID</strong> — a random UUID issued by Supabase so we can tie your purchase to your account.</li>
+    <li><strong>Purchase status</strong> — whether you have bought the one-time 21-day challenge. Stored with Apple's StoreKit, RevenueCat, and our backend.</li>
+    <li><strong>Challenge timestamps</strong> — when you started and completed a challenge, used to power the live "walkers active now" counter shown in-app.</li>
+    <li><strong>App usage events</strong> — screens viewed, buttons tapped, and similar product-interaction events. Used to understand which parts of the app work and which confuse people.</li>
+    <li><strong>Crash reports</strong> — automatically collected if the app crashes, so we can fix bugs.</li>
+  </ul>
+  <p>We do <strong>not</strong> collect location data, contacts, photos, advertising identifiers (IDFA), or any health data beyond step count.</p>
+
+  <h2>4. Third-Party Service Providers</h2>
+  <p>StepsStreak relies on the following service providers. None of them receive your HealthKit step data. None of them track you across other apps or websites.</p>
+  <ul>
+    <li><strong>Supabase</strong> (auth + database) — stores your user ID, name, email, purchase status, and challenge timestamps. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li><strong>RevenueCat</strong> (in-app purchases) — receives the Apple transaction identifier so we can verify your one-time purchase and restore it on a new device. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li><strong>Apple StoreKit / Sign in with Apple</strong> — handles payment and authentication. Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's privacy policy</a>.</li>
+    <li><strong>Google Sign-In</strong> — only if you choose Google as your login method. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+    <li><strong>Mixpanel</strong> (product analytics) — receives your anonymous user ID and app-usage events. Configured without IDFA / cross-app tracking. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li><strong>Firebase Crashlytics</strong> (crash reporting) — receives crash stack traces, device model, and OS version. Google Analytics is disabled. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+  </ul>
+
+  <h2>5. How We Use This Information</h2>
+  <p>We use the information collected solely to:</p>
+  <ul>
+    <li>Authenticate you and keep you signed in.</li>
+    <li>Unlock and restore your one-time 21-day challenge purchase.</li>
+    <li>Display your progress, streak, and history inside the app.</li>
+    <li>Power the live community counter ("X walkers live in a challenge right now").</li>
+    <li>Diagnose crashes and fix bugs.</li>
+    <li>Understand in aggregate which parts of the app people use.</li>
+  </ul>
+  <p>We do not use any of this information for advertising, targeted marketing, or sale to third parties.</p>
+
+  <h2>6. Data Storage & Security</h2>
+  <p>Your challenge records, day history, walks, and streak are stored locally on your device using Apple's SwiftData framework.</p>
+  <p>Your account and purchase information is stored with Supabase and RevenueCat, encrypted in transit (TLS) and at rest. Access is restricted via row-level security — each account can only read its own data.</p>
+  <p>Your step data remains inside Apple Health and is governed by Apple's own privacy policy.</p>
+
+  <h2>7. HealthKit-Specific Disclosures</h2>
+  <p>In compliance with Apple's HealthKit guidelines:</p>
+  <ul>
+    <li>HealthKit data will not be used for advertising or other use-based data mining.</li>
+    <li>HealthKit data will not be sold to third parties, including data brokers, advertising networks, or data analytics providers.</li>
+    <li>HealthKit data will not be disclosed to third parties for any purpose without user consent, except as required by law.</li>
+    <li>StepsStreak reads step count only. It does not write any data to HealthKit.</li>
+  </ul>
+
+  <h2>8. Tracking & Advertising</h2>
+  <p>StepsStreak does not show ads. We do not use the iOS advertising identifier (IDFA). We do not track you across other apps or websites. The App Tracking Transparency prompt is therefore not shown.</p>
+
+  <h2>9. Children's Privacy</h2>
+  <p>StepsStreak is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the app and provided any personal information, please contact us and we will take appropriate steps.</p>
+
+  <h2>10. Your Rights & Data Deletion</h2>
+  <p>You can delete your account and all associated server-side data at any time:</p>
+  <ul>
+    <li><strong>In the app:</strong> Settings → Delete account. This permanently removes your profile row and all data tied to your user ID from our backend. The deletion cannot be undone.</li>
+    <li><strong>Local app data:</strong> Deleting the app from your device removes all locally stored challenge, streak, and widget data.</li>
+    <li><strong>HealthKit access:</strong> Settings → Health → Data Access & Devices → StepsStreak revokes our read permission.</li>
+    <li><strong>By email:</strong> You can also write to <a href="mailto:support@stepsstreak.com">support@stepsstreak.com</a> and we will delete your account within 7 days.</li>
+  </ul>
+  <p>Depending on where you live, you may also have the right to access, correct, or port your data. Email the address above to exercise those rights.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Material changes will be surfaced in-app. Continued use after any changes constitutes your acceptance of the revised policy.</p>
+
+  <h2>12. Contact Us</h2>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+  <p><a href="mailto:support@stepsstreak.com">support@stepsstreak.com</a></p>
+</div>
+
+<footer>
+  <a href="/" class="footer-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <rect width="200" height="200" rx="44" fill="#F6F1E7"/>
+      <defs><linearGradient id="gf" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FBA06B"/><stop offset="100%" stop-color="#E94E1B"/></linearGradient></defs>
+      <path d="M62 48 C62 48, 145 42, 145 82 C145 112, 55 108, 55 138 C55 168, 138 172, 138 172" fill="none" stroke="url(#gf)" stroke-width="22" stroke-linecap="round"/>
+    </svg>
+    StepsStreak © 2025–2026
+  </a>
+  <div class="footer-links">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/support">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>
