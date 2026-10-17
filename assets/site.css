@@ -1,0 +1,89 @@
+/* StepStreak — "Ember" (dark only). Mirrors ios/StepStreak/Shared/Theme/Theme.swift. */
+@font-face{font-family:Geist;src:url(/assets/fonts/Geist-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Geist;src:url(/assets/fonts/Geist-SemiBold.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url(/assets/fonts/GeistMono-Medium.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{--bg:#0E0F11;--surface:#17191C;--surface2:#22252A;--ink:#F2F3F5;--muted:#9097A0;--line:#26292E;--accent:#FF5A33;--success:#3DD68C;
+--sans:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+body{min-height:100vh;display:flex;flex-direction:column}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:12px;background:var(--surface);padding:8px 12px;z-index:9}
+
+/* Header */
+.top{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:-.02em;font-size:17px}
+.brand svg{width:40px;height:auto}
+
+/* Type */
+h1,h2,h3{font-weight:600;letter-spacing:-.03em;line-height:1.05;text-wrap:balance}
+.accent{color:var(--accent)}
+.lead{text-wrap:pretty;color:var(--muted);font-size:clamp(17px,2.2vw,20px);line-height:1.5}
+.mono{font-family:var(--mono);font-weight:500;letter-spacing:.02em}
+
+/* Hero */
+.hero{text-align:center;padding-top:40px}
+.hero h1{font-size:clamp(40px,9vw,92px)}
+.hero .lead{margin:20px auto 32px;max-width:24ch;text-wrap:balance}
+.hero .phone{margin-top:56px;margin-bottom:88px}
+.badge{display:inline-block;border-radius:10px}
+.badge img{height:52px;width:auto}
+.phone{position:relative;width:min(300px,78vw);margin:0 auto;border-radius:48px;padding:10px;background:#050506;
+  border:1px solid #2E3137;box-shadow:0 0 0 1px #000,0 40px 120px -20px rgba(255,90,51,.22),0 30px 60px -30px #000}
+.phone img{width:100%;height:auto;border-radius:38px;aspect-ratio:640/1391}
+
+/* Sections */
+.feature{display:grid;gap:40px;align-items:center;padding-top:64px;padding-bottom:64px;border-top:1px solid var(--line)}
+.feature h2{font-size:clamp(32px,5vw,52px)}
+.feature .lead{margin-top:16px;max-width:34ch}
+.shot{border-radius:24px;overflow:hidden}
+.shot img{width:100%;height:auto}
+.stack{display:grid;gap:16px}
+.n{font-family:var(--mono);font-weight:500;font-size:13px;color:var(--muted);letter-spacing:.08em;margin-bottom:16px}
+
+/* Final CTA */
+.cta{text-align:center;padding-top:88px;padding-bottom:96px;border-top:1px solid var(--line)}
+.cta svg{width:112px;margin:0 auto 28px}
+.cta h2{font-size:clamp(32px,5vw,48px);margin-bottom:28px}
+
+/* Footer */
+.foot{margin-top:auto;border-top:1px solid var(--line);padding:28px 0 36px;font-size:14px;color:var(--muted)}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between}
+.foot nav{display:flex;gap:20px}
+.foot a{text-decoration:none;color:var(--muted)}
+.foot a:hover{color:var(--ink)}
+
+/* Legal / support pages */
+.doc{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+.doc h1{font-size:clamp(36px,6vw,52px);margin-bottom:12px}
+.doc .meta,.doc .subtitle{color:var(--muted);font-size:14px;margin-bottom:40px}
+.doc .subtitle{font-size:17px}
+.doc h2{font-size:21px;letter-spacing:-.02em;line-height:1.25;margin:44px 0 12px}
+.doc p,.doc li{color:#C4C8CE;font-size:16px;line-height:1.7}
+.doc p{margin-bottom:14px}
+.doc ul{padding-left:20px;margin-bottom:14px}
+.doc li{margin-bottom:8px}
+.doc strong{color:var(--ink);font-weight:600}
+.doc a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px}
+.highlight-box,.contact-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin:8px 0 32px}
+.highlight-box p{margin:0;font-size:15px}
+.faq{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line);padding:22px 0}
+.faq-q{font-weight:600;letter-spacing:-.01em;font-size:17px;margin-bottom:8px}
+.faq-a{color:#C4C8CE;line-height:1.7}
+.contact-card{margin-top:48px}
+.contact-card h2{margin-top:0}
+.btn-primary,.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:14px;font-weight:600;font-size:16px;text-decoration:none;background:var(--accent);color:#0E0F11;margin-top:4px}
+.doc .btn-primary{color:#0E0F11}
+
+@media (min-width:860px){
+  .hero{padding-top:72px}
+  .phone{width:340px}
+  .feature{grid-template-columns:1fr 1fr;gap:72px;padding-top:112px;padding-bottom:112px}
+  .feature.flip .copy{order:2}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.nowrap{white-space:nowrap}
