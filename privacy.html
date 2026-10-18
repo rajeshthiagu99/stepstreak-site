@@ -42,22 +42,23 @@
 </header>
 <main id="main" class="doc">
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: April 16, 2026 &nbsp;·&nbsp; Last updated: October 17, 2026</p>
+  <p class="meta">Effective date: April 16, 2026 &nbsp;·&nbsp; Last updated: October 18, 2026</p>
 
   <div class="highlight-box">
-    <p><strong>Summary:</strong> StepsStreak reads your step count from Apple Health (never written, never sold). To run the app we also collect your name, email, a user ID, and purchase status — these are stored with our authentication and payment providers. If you use Friends, your first name, daily step totals, and streak are shared with the friends you add. We use privacy-friendly analytics and crash reporting to keep the app working. You can delete your account and all associated data from inside the app at any time.</p>
+    <p><strong>Summary:</strong> StepsStreak reads your step count from Apple Health on iPhone or Health Connect on Android (never written, never sold). To run the app we also collect your name, email, a user ID, and purchase status — these are stored with our authentication and payment providers. When you are signed in, your first name, daily step totals, and streak are stored with our backend (Supabase) for the Friends and Global leaderboards, together with your invite code. Our analytics provider gets event names and a user ID only — never your steps or any other health data. You can delete your account and all associated data from inside the app or at <a href="/delete">stepsstreak.com/delete</a> at any time.</p>
   </div>
 
   <h2>1. About This Policy</h2>
   <p>This Privacy Policy describes how <strong>StepStreak</strong> — the iOS app published on the App Store, also marketed as "StepsStreak" on our website at stepsstreak.com (together, "the App", "we", "our") — handles information when you use our iOS application. By using the App, you agree to the practices described in this policy.</p>
 
-  <h2>2. Information We Access from Apple Health</h2>
+  <h2>2. Information We Access from Apple Health and Health Connect</h2>
   <p>StepsStreak requests permission to read one data type from Apple HealthKit:</p>
   <ul>
     <li><strong>Step Count</strong> (HKQuantityType .stepCount) — used to display your daily step progress and determine whether you have met the 10,000-step daily goal.</li>
   </ul>
+  <p>On Android, StepsStreak reads only <strong>Steps</strong> from Health Connect (READ_STEPS, plus optional background read so the widget and reminders stay current), for the same purpose. You can revoke it in Health Connect › App permissions › StepStreak.</p>
   <p>We request this permission explicitly through iOS's standard HealthKit authorization dialog. You may revoke it at any time in Settings → Health → Data Access & Devices → StepsStreak.</p>
-  <p>Health data stays on your device. The only exception is your daily step total and streak, which are sent to our backend to power the friends leaderboard (see "Friends leaderboard" in section 3). Health data is <strong>never</strong> sold or shared with advertisers or any other third party.</p>
+  <p>Health data stays on your device. The only exception is your daily step total and streak, which are sent to our own backend (Supabase) to power the leaderboards (see "Friends leaderboard" in section 3). Health data is <strong>never</strong> sent to our analytics or crash-reporting providers, and never sold or shared with advertisers or any other third party.</p>
 
   <h2>3. Information We Collect from You</h2>
   <p>To sign you in, bill you, and keep the app running, we collect:</p>
@@ -66,21 +67,21 @@
     <li><strong>Anonymous user ID</strong> — a random UUID issued by Supabase so we can tie your purchase to your account.</li>
     <li><strong>Purchase status</strong> — whether you have bought the one-time 21-day challenge. Stored with Apple's StoreKit, RevenueCat, and our backend.</li>
     <li><strong>Challenge timestamps</strong> — when you started and completed a challenge, used to power the live "walkers active now" counter shown in-app.</li>
-    <li><strong>App usage events</strong> — screens viewed, buttons tapped, and similar product-interaction events. Used to understand which parts of the app work and which confuse people.</li>
+    <li><strong>App usage events</strong> — the names of screens viewed and buttons tapped (for example "goal_reached"), with your user ID or an anonymous ID. They never include step counts, averages, distances, streaks or any other health value. Used to understand which parts of the app work and which confuse people.</li>
     <li><strong>Crash reports</strong> — automatically collected if the app crashes, so we can fix bugs.</li>
   </ul>
-  <p><strong>Friends leaderboard.</strong> When you are signed in, the app stores your daily step total (one number per day, taken from Apple Health) and your current streak in our backend (Supabase), together with an invite code for your account. Friends you add with an invite link or code, and only they, can see your first name (the first word of your account name), your daily steps, and your streak on a weekly leaderboard. They never see your email or any other account data. You can remove a friend at any time, and deleting your account deletes your step totals, invite code, and friend connections.</p>
+  <p><strong>Friends leaderboard.</strong> When you are signed in, the app stores your daily step total (one number per day, taken from Apple Health or Health Connect) and your current streak in our backend (Supabase), together with an invite code for your account. Friends you add with an invite link or code, and only they, can see your first name (the first word of your account name), your daily steps, and your streak on the Friends leaderboard. They never see your email or any other account data. You can remove a friend at any time, and deleting your account deletes your step totals, invite code, and friend connections.</p>
   <p><strong>Global leaderboard.</strong> When you are signed in, your first name (the first word of your account name) and your current and best streak appear on the Global leaderboard, which other signed-in StepStreak users can see. Names that fail our filter or get reported show as "Walker". To hide yourself, turn off <em>Settings › Show me on Global</em> (it is on by default).</p>
   <p>We do <strong>not</strong> collect location data, contacts, photos, advertising identifiers (IDFA), or any health data beyond step count.</p>
 
   <h2>4. Third-Party Service Providers</h2>
-  <p>StepsStreak relies on the following service providers. Apart from the daily step totals and streak stored in Supabase for the friends leaderboard, none of them receive your HealthKit step data. None of them track you across other apps or websites.</p>
+  <p>StepsStreak relies on the following service providers. Apart from the daily step totals and streak stored in Supabase for the friends leaderboard, none of them receive your step data or any other health data. None of them track you across other apps or websites.</p>
   <ul>
-    <li><strong>Supabase</strong> (auth + database) — stores your user ID, name, email, purchase status, challenge timestamps, and, for the friends leaderboard, your daily step totals, streak, invite code, and friend connections. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
-    <li><strong>RevenueCat</strong> (in-app purchases) — receives the Apple transaction identifier so we can verify your one-time purchase and restore it on a new device. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li><strong>Supabase</strong> (auth + database) — stores your user ID, name (the first word is your leaderboard name), email, purchase status, challenge timestamps, and, for the Friends and Global leaderboards, your daily step totals, streak, invite code, and friend connections. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li><strong>RevenueCat</strong> (in-app purchases) — receives the App Store or Google Play transaction identifier so we can verify your one-time purchase and restore it on a new device. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
     <li><strong>Apple StoreKit / Sign in with Apple</strong> — handles payment and authentication. Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's privacy policy</a>.</li>
     <li><strong>Google Sign-In</strong> — only if you choose Google as your login method. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
-    <li><strong>Mixpanel</strong> (product analytics) — receives your anonymous user ID and app-usage events. Configured without IDFA / cross-app tracking. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li><strong>Mixpanel</strong> (product analytics) — receives event names and your user ID (or an anonymous ID) only — no step counts or other health data. Configured without IDFA / advertising ID / cross-app tracking. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener">Privacy policy</a>.</li>
     <li><strong>Firebase Crashlytics</strong> (crash reporting) — receives crash stack traces, device model, and OS version. Google Analytics is disabled. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
   </ul>
 
@@ -122,6 +123,7 @@
     <li><strong>In the app:</strong> Settings → Delete account. This permanently removes your profile row and all data tied to your user ID from our backend. The deletion cannot be undone.</li>
     <li><strong>Local app data:</strong> Deleting the app from your device removes all locally stored challenge, streak, and widget data.</li>
     <li><strong>HealthKit access:</strong> Settings → Health → Data Access & Devices → StepsStreak revokes our read permission.</li>
+    <li><strong>On the web:</strong> <a href="/delete">stepsstreak.com/delete</a> explains every way to delete your account and data.</li>
     <li><strong>By email:</strong> You can also write to <a href="mailto:rajeshthiagu99@gmail.com">rajeshthiagu99@gmail.com</a> and we will delete your account within 7 days.</li>
   </ul>
   <p>Depending on where you live, you may also have the right to access, correct, or port your data. Email the address above to exercise those rights.</p>
