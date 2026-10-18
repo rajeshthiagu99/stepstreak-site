@@ -1,11 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "ai.stepstreak.app",
       "sha256_cert_fingerprints": [
-        "29:1C:AE:86:9F:32:34:A6:4A:54:81:D6:B5:F8:22:6C:E8:1C:19:E3:36:8B:55:32:EB:5F:AA:93:62:04:9F:B7"
+        "29:1C:AE:86:9F:32:34:A6:4A:54:81:D6:B5:F8:22:6C:E8:1C:19:E3:36:8B:55:32:EB:5F:AA:93:62:04:9F:B7",
+        "0F:CA:25:D4:1B:77:16:79:92:75:1B:98:14:13:5C:1A:5F:DC:DF:0C:83:70:89:57:AC:E6:A2:29:D3:62:66:11"
       ]
     }
   }
